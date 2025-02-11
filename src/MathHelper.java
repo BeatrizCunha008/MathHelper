@@ -25,5 +25,11 @@ public class MathHelper {
         return somaTotal;
     }
 
-
+    public double media(double[] numeros){
+        double somaTotal = 0;
+        for(double num : numeros){
+            somaTotal +=  num;
+        }
+        return somaTotal / numeros.length;
+    }
 }
