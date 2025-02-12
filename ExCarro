@@ -1,0 +1,42 @@
+public class Carro {
+    private int km;
+    private boolean alugado;
+
+    public int getKm() {
+        return km;
+    }
+
+    public boolean estaAlugado() {
+        return alugado;
+    }
+
+    public void setKm(int km) {
+        this.km = km;
+    }
+
+    public void setAlugado(boolean alugado) {
+        this.alugado = alugado;
+    }
+
+    public void adicionaKm(int km){
+        this.km += km;
+    }
+}
+
+
+public class Main {
+    public static void main(String[] args) {
+        Carro lambo = new Carro();
+
+        lambo.setKm(50000);
+        lambo.setAlugado(true);
+
+        System.out.println("Quilometragem: " + lambo.getKm());
+        System.out.println("Alugado: " + lambo.estaAlugado());
+
+        lambo.adicionaKm(150);
+
+        System.out.println("Quilometragem depois da viagem: " + lambo.getKm());
+
+    }
+}
